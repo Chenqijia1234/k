@@ -13,7 +13,7 @@ from utils import error, unreachable
 INTEGER = r"[0-9]+"
 FLOAT = INTEGER + "." + INTEGER
 STRING = r'"((\")?|\d|\D)*"'
-COMMENT = r"//(\W|\w)*$"
+COMMENT = r"(//(\W|\w)*$)|(/\*(\W|\w|\*/|\*/)*\*/)"
 OPERATOR = r"\(|\)|;|\+|-|\*|/|%|=|==|!=|<|>|{|}|[|]"
 IDENTIFIER = r"([a-z_A-Z][a-z_0-9A-Z]*)"
 
